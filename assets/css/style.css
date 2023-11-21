@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/* Start Containers */
+.container-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.container-custom-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  flex-wrap: wrap;
+}
+
+.container-custom-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto;
+  flex-wrap: wrap;
+  width: 95%;
+}
+
+/* End Containers */
+
+/* Start Navbar */
+
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: block;
+}
+
+.dropdown {
+  background-color: #fff;
+  color: black;
+  width: 150px;
+  text-align: center;
+  height: 0px;
+  transition: 1s;
+
+  >li {
+    list-style-type: none;
+    height: 50px;
+    width: 150px;
+    transition: .3s;
+
+    >a {
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    &:hover {
+      background-color: rgb(39, 39, 39);
+
+      >a {
+        color: white;
+      }
+    }
+  }
+}
+
+.dropdown-2 {
+  background-color: #fff;
+  color: #000000;
+  width: 500px;
+  text-align: center;
+  height: 0px;
+}
+
+.dropdown-3 {
+  background-color: #fff;
+  color: #000000;
+  width: 500px;
+  text-align: center;
+  height: 0px;
+}
+
+#item-brand {
+  list-style-type: none;
+  height: 50px;
+  width: 150px;
+  transition: .3s;
+
+  >a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  &:hover {
+    background-color: rgb(39, 39, 39);
+
+    >a {
+      color: white;
+    }
+  }
+}
+
+.line-dropdown {
+  width: 150px;
+  height: 2px;
+  background-color: black;
+}
+
+
+@media screen and (min-width:1000px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+#mobile-navbar {
+  width: 100%;
+  height: 0px;
+
+  >ul {
+    width: 100%;
+
+    >li {
+      list-style-type: none;
+      height: 50px;
+      width: 100%;
+      transition: .3s;
+
+      >a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+
+      &:hover {
+        background-color: white;
+        width: 100%;
+
+        >a {
+          color: black;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* End Navbar */
